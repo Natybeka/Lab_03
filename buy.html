@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Buy</title>
+    <style>
+        #moved-image{
+            position: relative;
+            top: 340px;
+            right: -290px;
+        }
+        
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
@@ -21,7 +30,7 @@
                     <a class="nav-link" href="index.html">About</a>
                 </li>
                 <li class="nav-item d-flex flex-row-reverse">
-                    <a class="nav-link" href="#">Service</a>
+                    <a class="nav-link" href="services.html">Service</a>
                 </li>
     
             </ul>
@@ -35,7 +44,7 @@
                     <a class="nav-link" href="register.html">Register</a>
                 </li>
                 <li class="nav-item d-flex flex-row-reverse">
-                    <a class="nav-link" href="buy.html">Buy</a>
+                    <a class="nav-link" href="#">Buy</a>
                 </li>
             </ul>
         </div>
@@ -43,40 +52,42 @@
     <h1 class="display-4 text-center">Shoe Expo.</h1>
     <hr class="mx-auto">
     <div class="container-fluid ml-auto mt-2">
-        <div class="row text-center">
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="./Assets/Images/fashion-shoes-footwear-19090.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Sneaker Shoe</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci aliquam molestias corrupti esse. Modi illum aut officiis optio odio repellendus minus aliquid sequi! Labore magni minima maxime voluptatem dolorum?</p>
-                        <a href="buy.html" class="btn btn-primary btn-lg">Buy</a>
-                    </div>
+        <div class="row">
+            <div class="col-md-8 ">
+                <div class="image-container">
+                    <img src="./Assets/Images/pexels-melvin-buezo-2529148.jpg" alt="image of shoes" style="height: 350px; width: 400px;" id="moved-image">
+                    <img src="./Assets/Images/photo-of-pair-of-vans-sneakers-1598508.jpg" alt="image of shoes" style="height: 350px; width: 400px;" >
+                </div>  
+            </div>
+            <div class="col-md-4 mt-5" style="margin-left: -100px;">
+                <div class="container">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="fname">Shoe Size :</label>
+                            <input class="form-control inputs" type="number" name="fname" id="fname" style="width: 100px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Amount :</label>
+                            <input class="form-control inputs" type="number" name="amount" style="width: 100px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Shoe Type :</label>
+                            <input class="form-control inputs" type="text" name="lname" id="lname" style="width: 300px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="option">Payment method :</label>
+                            <select name="option" id="">
+                                <option value="mastercard">Mastercard</option>
+                                <option value="visa">Visa</option>
+                                <option value="Cash">Cash</option>
+                                
+                            </select>
+                        </div>
+                        <button class="btn-sm btn-outline-success" type="submit">Add to Cart</button>	
+                    </form>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="./Assets/Images/photo-of-nike-shoes-1598505.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Sneaker Shoe</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci aliquam molestias corrupti esse. Modi illum aut officiis optio odio repellendus minus aliquid sequi! Labore magni minima maxime voluptatem dolorum?</p>
-                        <a href="buy.html" class="btn btn-primary btn-lg">Buy</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="./Assets/Images/footwear-leather-shoes-wear-267320.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Sneaker Shoe</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci aliquam molestias corrupti esse. Modi illum aut officiis optio odio repellendus minus aliquid sequi! Labore magni minima maxime voluptatem dolorum?</p>
-                        <a href="buy.html" class="btn btn-primary btn-lg">Buy</a>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
-    
 </body>
 </html>
